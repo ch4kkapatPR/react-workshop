@@ -1,0 +1,319 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* src/App.css - เพิ่ม styles */
+.welcome-card {
+  background: #3f3f3f;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  width: 500px; 
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.welcome-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-info {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.badge.adult {
+  background: #10b981;
+  color: white;
+}
+
+.badge.minor {
+  background: #f59e0b;
+  color: white;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-item {
+  background: #3b82f6;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.student-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 500px; 
+  padding: 20px;
+  margin: 20px auto;
+  background: #3f3f3f;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Prompt", sans-serif;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.student-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d1d5db;
+}
+
+.info-section {
+  display: block;
+}
+
+
+.gpa {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.hobbies {
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.hobbies button:hover {
+  background-color: #c7d2fe;
+}
+
+.student-form {
+  background: #fff; /* สีขาว */
+  border: 2px solid #ccc; /* เทากลาง */
+  border-radius: 16px;
+  padding: 32px 100px;
+  margin: 32px auto;
+  max-width: 500px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  color: #111; /* ข้อความดำ */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
+}
+
+.student-form h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  text-shadow: none;
+}
+
+/* Form group */
+.student-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Labels */
+.student-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #444;
+  letter-spacing: 0.02em;
+}
+
+/* Inputs and selects */
+.student-form input[type="text"],
+.student-form input[type="number"],
+.student-form select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.05rem;
+  border: 2px solid #999;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  color: #111;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.student-form input[type="text"]::placeholder,
+.student-form input[type="number"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.student-form input[type="text"]:focus,
+.student-form input[type="number"]:focus,
+.student-form select:focus {
+  border-color: #555;
+  outline: none;
+  background-color: #eaeaea;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Error state */
+.student-form input.error,
+.student-form select.error {
+  border-color: #d32f2f; /* แดง */
+  background-color: #f9d6d5;
+  box-shadow: 0 0 6px #d32f2f;
+}
+
+/* Error messages */
+.student-form .error-message {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Form row (year + gpa) */
+.student-form .form-row {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.student-form .form-row .form-group {
+  flex: 1;
+}
+
+/* Small hint text */
+.student-form small {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Buttons */
+.student-form .form-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.student-form .btn {
+  background-color: #444;
+  color: white;
+  font-size: 1.15rem;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.student-form .btn:hover:not(:disabled) {
+  background-color: #666;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+}
+
+.student-form .btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Live preview */
+.student-form .form-preview {
+  margin-top: 2.5rem;
+  background: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 18px 20px;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Student Form */
+@media (max-width: 600px) {
+  .student-form {
+    padding: 24px 24px;
+  }
+
+  .student-form .form-row {
+    flex-direction: column;
+  }
+}
